@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FAFAFA;
+  color: black;
+}
+.containerHeader{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  margin-bottom: 3rem;
+}
+
+.flexHead{
+  display: flex;
+  align-content: stretch;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  height:3.7rem;
+  width: 58.438rem;
+}
+
+.logoInstagram{
+  align-self:flex-start;
+  margin-right: 7rem;
+}
+
+.container{
+  display: grid;
+  grid-template-columns:repeat(6,13%);
+  margin-right: auto;
+  list-style: none;  
+}
+
+ol li {
+  width: 40.156px;
+  height: 36px;
+  margin-right: 1.5rem;
+  text-align:justify;
+  cursor: pointer;
+}
+
+li div p{
+ margin-top: .5rem;
+ font-size: .9rem;
+}
+
+input{
+  justify-self:center;
+  align-self:flex-start;
+  margin-right: -5rem;
+  width: 15.6rem;
+  height: 2.4rem;
+  border: .5px solid #EFEFEF;
+  background-color: #EFEFEF;
+  border-radius: .5rem;
+  color: #8E8E8E;
+}
+
+img{
+  width: 2rem;
+}

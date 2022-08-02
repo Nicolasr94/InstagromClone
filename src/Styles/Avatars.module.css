@@ -1,0 +1,106 @@
+.circleContent{
+  align-self: center;
+  background-color: #271111;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+.circleSmall{
+  align-self: center;
+  background-color: #271111;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.circleLargeContain{
+  display: flex;
+  flex-direction: column;
+  width: 3.25;
+  height: 7.5rem;  
+}
+
+.circleLarge{
+  margin: auto;
+  background-color: #271111;
+  border-radius: 2.2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.circleLargeimg{
+  background-color: #271111;
+  width: 100%;
+  height: 100%;
+  border-radius: 2.2rem;
+}
+
+
+.circleLargeContain h6{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.containCircleSmall{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.circleContentSmall{
+  align-self: center;
+  background-color: #271111;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.firstNameSmall{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.secondNameSmall{
+  font-size: 1rem;
+}
+.circleSideRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.circleSideRight content{
+  flex: auto; 
+  align-self: center;
+  margin-left: 1rem;
+
+}
+
+.circleSideRight a{
+  align-self:center;
+  margin-top: .2rem;
+}
+
+.firstName{
+ font-size: .8rem;
+ font-weight: bold; 
+}
+
+.containerTitleH{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerTitleH a{
+  margin-top: 1.8rem;
+  align-self:center;
+}
+
+.titleH{
+  font-size: 1rem;
+  align-self: center;
+  text-align: left;
+  margin-top: 2rem;
+
+}

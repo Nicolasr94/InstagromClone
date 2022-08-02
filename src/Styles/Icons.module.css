@@ -1,0 +1,27 @@
+.containBar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.firstBar{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.secondBar{
+  display: flex;
+  gap: 10px;
+}
+.historyIconBar{
+  display: flex;
+  flex-direction: column;
+}
+
+.imgIcon{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}

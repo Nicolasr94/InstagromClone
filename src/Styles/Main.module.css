@@ -1,0 +1,126 @@
+/* Estilo para version mayor a 800px*/
+.largeContain{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 3rem;
+  grid-template-rows: 1fr 1fr minmax(5rem,1fr);
+  width: 95vw;
+}
+
+.largeMain{
+  background-color: #FFFF;
+  border: 1px solid grey;
+  margin-top: 10rem;
+  width: 25vw;
+  height: 100%;
+  grid-column:2/2;
+  grid-row: 1/1;
+
+}
+/* Estilo para version menor a 800px */
+.midContain{
+ display: block;
+}
+
+.midMain{
+  background-color: #271111;
+  margin: auto;
+  width: 80vw;
+  height: 100vh;
+}
+
+
+
+.historyContain{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(219, 219, 219);
+  margin-bottom: 1rem;
+  }
+
+.historyHeader{
+  display: flex;
+  flex-direction: row;
+  width:29.375rem ;
+  height: 3.5rem;
+}
+
+.boxComment{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(219, 219, 219);
+  height: 4rem;
+}
+.boxComment div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-content: flex-start;
+}
+.boxComment input{
+  background-color: #FFFF;
+  border: none;
+  outline: none;
+  height: 3.2rem;
+}
+
+.containImgPage img {
+  margin: auto;
+  width: 100%;
+  max-height: 36.75rem;
+}
+
+.historyIconBar{
+  display: flex;
+  flex-direction: column;
+  }
+
+.historyNav{
+  display: grid;
+  margin-bottom: 1rem;
+  grid-template-rows: repeat(auto-fill, minmax(5rem,1fr));
+  grid-auto-flow:column;
+  grid-auto-columns: minmax(5rem,1fr);
+  overflow-x: auto;
+  grid-gap:1rem;
+  background-color: #FFFF;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, .1) ;
+  box-shadow: .5px .5px .5px .5px rgba(0, 0, 0, .1);
+  width: 25vw;
+  height: 7rem;
+  grid-column:2/2;
+  grid-row: 1;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+.containerAvatar{
+  display: grid;
+  grid-template-rows: 1fr 4fr ;
+  margin-right: 25rem;
+  height: 40rem;
+  width: 19.93rem;
+  grid-column:3/3;
+  grid-row: 1/1;
+}
+
+.suggestedContain{
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: repeat(7,1fr);
+  gap: 1rem;
+  height: 5rem;
+  width: 19.93rem;
+}
+
+
+.suggestedContain a{
+  align-self: center;
+  justify-self: flex-end ;
+  grid-column: 2/2;
+  
+
+}
