@@ -8,14 +8,14 @@ import Styles from '../../Styles/Icons.module.css'
 export default function BarButtons() {
   return (
   <React.Fragment>
-    <contain className={Styles.containBar}>
+    <div className={Styles.containBar}>
       <div className={Styles.firstBar}>
         <Heart></Heart>
         <Messages></Messages>
         <Send></Send>
       </div>
         <Save></Save>
-    </contain>
+    </div>
     </React.Fragment>
   )
 }

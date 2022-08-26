@@ -10,10 +10,10 @@ export default function CircleUserSmall(props) {
           <img src={props.imagen} alt="jeje"></img>
         </div>
 
-        <content>
+        <div>
           <h3 className={Styles.firstNameSmall}>Nombre de usuario</h3>
           <h4 className={Styles.secondNameSmall}>Sugerencia para ti </h4>
-        </content>
+        </div>
         <Follow></Follow>
       
       </div>

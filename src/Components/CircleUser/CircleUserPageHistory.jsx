@@ -9,9 +9,9 @@ export default function CircleUserPageHistory(props) {
           <img src={props.imagen} alt="jeje"></img>
         </div>
 
-        <content>
-          <h3 className={Styles.firstNameSmall}>Nombre de usuario</h3>
-        </content>      
+        <div>
+          <h3 className={Styles.firstNameSmall}>{props.user}</h3>
+        </div>      
       </div>
      
     </React.Fragment>

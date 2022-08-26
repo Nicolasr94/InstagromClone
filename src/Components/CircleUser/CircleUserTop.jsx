@@ -12,10 +12,10 @@ export default function CircleUserTop(props) {
           <img src={props.imagen} alt="jeje"></img>
         </div>
 
-        <content>
+        <div>
           <p className={Styles.firstName}>Nombre de usuario</p>
           <p className={Styles.secondName}>Nombre de usuario2</p>
-        </content>
+        </div>
         
         <Change></Change>
       </div>
