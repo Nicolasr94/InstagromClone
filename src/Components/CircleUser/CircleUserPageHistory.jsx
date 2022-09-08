@@ -1,16 +1,16 @@
 import React from "react";
 import Styles from "../../Styles/Avatars.module.css";
 
-export default function CircleUserPageHistory(props) {
+export default function CircleUserPageHistory({imagen,user}) {
   return (
     <React.Fragment>
      <div className={Styles.circleSideRight}>
         <div className={Styles.circleSmall}>
-          <img src={props.imagen} alt="jeje"></img>
+          <img src={imagen} alt="jeje"></img>
         </div>
 
         <div>
-          <h3 className={Styles.firstNameSmall}>{props.user}</h3>
+          <h3 className={Styles.firstNameSmall}>{user}</h3>
         </div>      
       </div>
      

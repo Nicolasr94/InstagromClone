@@ -4,7 +4,6 @@ import Styles from './Styles/Main.module.css';
 import Main from './Components/Main';
 import Header from './Components/Header'
 import HistoryBar from './Components/HistoryBar';
-import HistoryPage from './Components/HistoryPage';
 import RightMain from './Components/RightMain';
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -15,16 +14,15 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-   
+   <>
     <Header></Header>
     <div className={Styles.largeContain}>
     <HistoryBar></HistoryBar>
     <RightMain></RightMain>
-      <HistoryPage></HistoryPage>
     <Main>
     </Main>    
     </div>
-
+    </>
   </StrictMode>
 );
 
