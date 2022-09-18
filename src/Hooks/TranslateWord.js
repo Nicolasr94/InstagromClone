@@ -9,10 +9,17 @@ const OPTIONS = {
 	}
 };
 
+function upperToCase ( str ) { 
+		return str.charAt(0).toUpperCase() + str.slice(1);
+	}
+	
 
-export const translate = async (word) => { 
-	let response = await fetch(URL(word), OPTIONS)
-	let wordTranslate = await response.json()
-	wordTranslate = wordTranslate.responseData.translatedText
-  return  wordTranslate
-}
+export const translate =  async (word) => {
+	// let response = {data:'',statusOk:false}; 
+		// .then((res) => response.statusOk = res.ok)
+	 let wordKey = await fetch(URL(word), OPTIONS)
+	.then((resp) =>resp.json())
+	.then((data) => upperToCase(data.responseData.translatedText))
+	.then((dataF) => dataF)
+	return wordKey;
+} 

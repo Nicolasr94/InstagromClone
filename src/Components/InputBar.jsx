@@ -1,6 +1,6 @@
-import React from 'react';
-import {translate} from '../Hooks/FetchTranslate'; // devuelve la variable `word`
-import { fetchData } from '../Hooks/FetchData';
+import React, { useEffect } from 'react';
+import {translate} from '../Hooks/TranslateWord'; // Hace un fetch y devuelve la variable `word`
+import { historyPhotos } from '../Hooks/FetchData';
 import { useState } from 'react';
 
 export default function InputBar () {
@@ -11,27 +11,35 @@ export default function InputBar () {
   //   notMatch:[]
   // });
   
-  const  getColecctions = async () => {
-    let resultTranslate;
-    let resultFetch;
-    if(inputValue !== ''){
-      resultTranslate = await translate(inputValue);
-    }
-    if(resultTranslate){
-      fetchData.historyPhotos(inputValue)
-      .then(response => response.ok?resultFetch = true:resultFetch = false)
-    }
-    
-    return console.log(resultFetch)
-  }
+ 
   // wordsKey.notMatch += event.target.value
+// useEffect(() => {
+//   first
+
+//   return () => {
+//     second
+//   }
+// }, [third])
+
   
-  const sendInputValue = event => {
-    setInputValue(event.target.value)
+  
+const data = async () => {
+  let fetch1 = await translate(inputValue)
+  let fetch2 = await historyPhotos(fetch1)
+    return console.log("este es el fetch 2 "+ fetch2 ); 
+}
+
+
+  const sendInputValue = (e) => {
+   if(e.key === 'Enter' && e.inputValue !== ''){
+      setInputValue(e.target.value)
+      data()
+    }
+
+  }
+    return ( 
+      <input placeholder='Buscar' onKeyUp={sendInputValue}></input>
+    )
+
     }
   
-    return (
-      <input placeholder='Buscar' onKeyDown={sendInputValue}></input>
-    )
-  
-}   

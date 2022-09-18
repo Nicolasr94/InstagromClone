@@ -1,5 +1,5 @@
 import { useEffect,useState } from 'react';
-import { fetchData } from "../Hooks/FetchData";
+import { feedPhotos } from "../Hooks/FetchData";
 import HistoryPageLayout from './HistoryPageLayout';
 
 
@@ -7,7 +7,7 @@ import HistoryPageLayout from './HistoryPageLayout';
 export default function HistoryPage() {
   const [data,setData] = useState();
   useEffect(() => {
-    fetchData.feedPhotos()
+    feedPhotos()
       .then((data) => setData(data))
   },[])
 
