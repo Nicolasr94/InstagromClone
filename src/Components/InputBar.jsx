@@ -13,19 +13,9 @@ export default function InputBar () {
   
  
   // wordsKey.notMatch += event.target.value
-// useEffect(() => {
-//   first
-
-//   return () => {
-//     second
-//   }
-// }, [third])
-
-  
   
 const data = async () => {
-  let fetch1 = await translate(inputValue)
-  let fetch2 = await historyPhotos(fetch1)
+  let fetch2 = await historyPhotos(inputValue)
     return console.log("este es el fetch 2 "+ fetch2 ); 
 }
 
