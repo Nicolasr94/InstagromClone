@@ -1,4 +1,3 @@
-
 let  URL = (word) => `https://translated-mymemory---translation-memory.p.rapidapi.com/api/get?langpair=es%7Cen&q=${word}&mt=1&onlyprivate=0&de=a%40b.c`;
 // 'https://translated-mymemory---translation-memory.p.rapidapi.com/api/get?langpair=en%7Ces&q=Hello%20World!&mt=1&onlyprivate=0&de=a%40b.c
 const OPTIONS = {

@@ -1,4 +1,3 @@
-
 import { MapData } from '../Hooks/MapData';
 
 export  function AdapterData (dataToAdapter) {

@@ -13,7 +13,6 @@ const options = {
   }
 }
  
-const base_URL = "https://api.pexels.com/v1/collections/featured/?page=1&per_page=80";
 
 
 const filterData =  (data,word) => {
@@ -22,7 +21,8 @@ const filterData =  (data,word) => {
    return  console.log('encontrado '+filter.id)
 }else{
    return false
-}};
+}
+}
 
 
 const fetchData = async (url) => {
@@ -31,11 +31,16 @@ const fetchData = async (url) => {
   return json;
 };
 
-
 export const historyPhotos = async (word,url) => {
-  let {collections,next_page} = await fetchData(url = base_URL);
+  let {collections,next_page} = await fetchData(url);
   console.log(collections)
   let filter = filterData(collections,word)
+  if(filter === false){
+    console.log("No se encontro,se sigue el proximo" + next_page)
+    historyPhotos(word,next_page)
+  }else{
+    return filter
+  }
 }
 
 export const feedPhotos = async () => {
